@@ -1,4 +1,3 @@
-# HR_Analytics_Linear-Regression
 # Overview:
 
 # Goal: 
@@ -20,15 +19,19 @@ across India and have got placed at different roles in different firms.
 Python programing using Regression methods like Linear, KNN, LASSO and Decision Trees to predict CTC for a freshly graduated candidate 
 from the University also tried boosting the model using Gradient Boosting/ Ada Boosting.
 
-Intial Analysis : 
+# Intial Analysis : 
 
 Found missing values in the dataset in the Recruitment Assessment data and Participant information data 
+
       - for the Participant information data, the 10 and 12 th marks have been replaced with Median since I found the board 
         name for those missing values of 12th and 10th.
-      - for the Recruitment Assessment data - according to the data description document the "-1" values indicates that the person has
-        not appeared for the test, it is considered as the missing data.
-
-In case the score is -1 for this test, you could make use of the scores in the tests mentioned below to get more information. If the scores in the tests below are -1 as well, then it can be concluded that the candidate has not given a module listed here.
+        
+      - for the Recruitment Assessment data, according to the data description document the "-1" values indicates that the person has
+        not appeared for the test, it is considered as the missing data.In case the score is -1 for this test, you could make use of 
+        the scores in the other tests to get more information. If the scores in the other tests are -1 as well, then it can be concluded         that the candidate has not given a module listed here.
+        
+# Exploratory Data Analysis:
+       - The columns has been dropped 
     
 
 Dataset:
