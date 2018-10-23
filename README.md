@@ -19,6 +19,8 @@ across India and have got placed at different roles in different firms.
 Python programing using Regression methods like Linear, KNN, LASSO and Decision Trees to predict CTC for a freshly graduated candidate 
 from the University also tried boosting the model using Gradient Boosting/ Ada Boosting.
 
+Also Done PCA for the dimension reduction to effectively predict the underlying data patterns using principal components.
+
 # Intial Analysis : 
 
 Found missing values in the dataset in the Recruitment Assessment data and Participant information data 
@@ -28,13 +30,17 @@ Found missing values in the dataset in the Recruitment Assessment data and Parti
         
       - for the Recruitment Assessment data, according to the data description document the "-1" values indicates that the person has
         not appeared for the test, it is considered as the missing data.In case the score is -1 for this test, you could make use of 
-        the scores in the other tests to get more information. If the scores in the other tests are -1 as well, then it can be concluded         that the candidate has not given a module listed here.
+        the scores in the other tests to get more information. If the scores in the other tests are -1 as well, then it can be concluded 
+        that the candidate has not given a module listed here.
         
 # Exploratory Data Analysis:
-       - The columns has been dropped 
+       - The columns of the tests other than domain has been dropped once after missing values from the domain column is been imputed 
+         using these other tests
+       - Plotted Heat Map to find the correlations between the independent variables 
+       - Plotted the Box Plot to find the distribution pattern for each independent variable and also to find the outliers
     
 
-Dataset:
+# Dataset:
 The problem consists of 3 separate datasets: Participant information, Recruitment Assessment data and Personality Test data. 
 The Participant information has the profile information along with the placement information for every participant. 
 The Recruitment Assessment data has score data for every participant who sits through the placement process. 
@@ -42,5 +48,5 @@ Similarly, the Personality test data has scores from a personality test conducte
 
 You are expected to treat this as raw data and perform any necessary cleaning/validation steps as required.
 
-Model Evaluation:
+# Model Evaluation:
 Each Model will get evaluated on the basis of RMSE. The model with the lowest RMSE will get ranked as the best model.  
